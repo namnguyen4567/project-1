@@ -1,6 +1,274 @@
-/* Place CSS styles here */
 
-.li {
-list-style: none;
-padding-left: 0;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}
+
+body {
+  background-color: white;
+  font-family: 'Manrope', sans-serif;
+  line-height: 2em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1em;;
+}
+.photo-caption {
+  font-size: 1.4em;
+  font-weight: 200;
+
+}
+
+.h1-landing-page {
+  text-align: center;
+  color:orangered;
+  font-size: 3em;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right:auto;
+  padding-left: min(5%);
+  padding-right:min(5%);
+  line-height: 1.5em;
+  font-family: 'Delius Unicase', cursive;
+
+}
+
+.h1-other-page{
+  color: rgb(255, 255, 255);
+font-size: 6em;
+font-weight: 200;
+line-height: 1.5em;
+margin-left: auto;
+margin-right:auto;
+padding-left: min(5%);
+padding-right:min(5%);
+
+}
+
+.other-page-intro {
+  background:url(../img/background-other-page.jpeg);
+  padding-top: 200px;
+  padding-bottom: 100px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}
+
+.landing-intro {
+  background:url(../img/background-landing-page.jpg);
+  padding-top: 300px;
+  padding-bottom: 100px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+
+}
+
+.main-content-wrapper {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 200px
+}
+
+
+.nav-wrapper {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  padding: 20px;
+}
+
+
+.nav {
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+  font-family: 'Delius Unicase', cursive;
+}
+
+.nav a {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: none;
+  text-decoration: none;
+  color: black;
+  transition: all ease .25s;
+
+}
+
+.nav a:hover {
+  background-color: red;
+  color: white;
+
+  
+
+}
+
+
+
+
+ 
+.social-link:hover {
+  border: 1px solid black;
+}
+
+.social-links {
+  display: flex;
+  gap: 60px;
+}
+
+.social-link-image {
+  width: 32px;
+}
+
+.list-of-my-work {
+  padding-left: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 4px;
+}
+
+@media (max-width: 999px) {
+  .list-of-my-work {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+@media (max-width: 999px) {
+  .nav {
+    display: none;
+    text-decoration: none;
+  }
+}
+.mobile-main-nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color:White;
+  position: absolute;
+  top: 132px;
+  left: 0;
+  right: 0;
+  color: grey;
+}
+.icon {
+  text-decoration: none;
+  color:black;
+
+}
+.mobile-main-nav a {
+  padding: 8px;
+  text-decoration: none;
+  color:black;
+}
+
+@media (min-width: 1000px) {
+  .mobile-nav-wrapper {
+    display: none;
+  }
+}
+
+.list-of-my-work a {
+  color:grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.list-of-my-work a:hover {
+  color: red;
+}
+
+.list-of-my-work p {
+  font-size: 20px;
+}
+
+.contact-form {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 20px;
+  background: white;
+  margin-bottom: 32px;
+}
+
+.section-divider {
+  background-color: white;
+  width: 100%;
+  height: 120px;
+}
+
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color:white;
+}
+.footer-content-wrapper {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: solid;
+  border-width: 0.5px;
+  border-color:white;
+  padding-top: 50px;
+
+
+  
+}
+
+.footer-section {
+  background-color: #a30707;
+  width: 100%;
+  height: 200px;
+  padding-top: 150px;
+ 
+}
+
+.feature-content {
+  display: flex;
+  gap: 80px;
+}
+
+.headshot-image {
+  width: 500px;
+  height: 500px;
+}
+
+.feature-images {
+  display: flex;
+  gap: 12px;
 }
